@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chicago citation tool</title>
+		<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<p>You are citing a:</p>
+		<select id="formats">
+			<option value="book">Book</option>
+			<option value="website">Website</option>
+		</select>
+		<br />
+		<br />
+		<div id="fields"></div>
+		<div id="results">
+			<p>In your bibliography:</p>
+			<div id="result_bibliography"></div>
+			<p>In the footnote:</p>
+			<div id="result_footnote"></div>
+			<p>In subsequent footnotes:</p>
+			<div id="result_more_footnotes"></div>
+		</div>
+	</body>
+</html>
