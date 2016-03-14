@@ -81,6 +81,11 @@ function calculateCitation() {
 	$("#result_bibliography").text(toProcess.bibliography);
 	$("#result_footnote").text(toProcess.footnote);
 	$("#result_more_footnotes").text(toProcess.more_footnotes);
+
+	// italics formatting
+	$("#result_bibliography").html($("#result_bibliography").html().replace(/{i}(.*?){\/i}/g, "<i>$1</i>"));
+	$("#result_footnote").html($("#result_footnote").html().replace(/{i}(.*?){\/i}/g, "<i>$1</i>"));
+	$("#result_more_footnotes").html($("#result_more_footnotes").html().replace(/{i}(.*?){\/i}/g, "<i>$1</i>"));
 }
 
 function createFields() {
